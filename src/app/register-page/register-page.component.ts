@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 })
 export class RegisterPageComponent implements OnInit {
   isLoginMode = true;
+  errors: string | any;
   public registerForm: FormGroup | any;
 
   constructor(
@@ -27,14 +28,25 @@ export class RegisterPageComponent implements OnInit {
   public onSubmit() {
     const email = this.registerForm.get('email')!.value;
     const password = this.registerForm!.get('password')!.value;
+    console.log(email, password);
     if (this.isLoginMode) {
       this.authenticationService.login(email, password).subscribe((res) => {
         this.router.navigate(['']);
-      });
-    } else {
-      this.authenticationService.signup(email, password).subscribe((res) => {
         console.log(res);
       });
+    } else {
+      this.authenticationService.signup(email, password).subscribe(
+        (res: any) => {
+          console.log(res);
+        },
+        (error: any) => {
+          let newError = error.error.error.message;
+          console.log(newError);
+          if (newError === 'EMAIL_EXISTS') {
+            this.errors = 'This email already exists!';
+          }
+        }
+      );
     }
   }
 }
