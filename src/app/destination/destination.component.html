@@ -1,1 +1,29 @@
-<p>destination works!</p>
+<div>
+  <h2> Destinations </h2>
+
+  <div class="row">
+      <div class="col-md-3">
+          <div class="input-group">
+              <input type="text" class="form-control" placeholder="enter Destination" [(ngModel)]="place.name"/>
+              <div class="input-group-btn">
+                  <button class="btn btn-primary" type="button" (click)="onClick()">
+                    <span class="bi bi-clipboard2-plus-fill"></span>
+                   </button>
+              </div>
+          </div>
+   <br>
+  <ul class="list-group">
+    <li *ngFor="let place of places" class="list-group-item">
+
+  <label>&nbsp;&nbsp;</label>
+  <span>
+    {{ place.name }} &nbsp;&nbsp;
+</span>
+<span (click)="onEdit(place)" class="bi bi-pencil-fill" ></span>
+<span (click)="onDelete(place)" class="bi bi-clipboard2-x-fill"></span>
+</ul>
+</div>
+</div>
+</div>
+
+
