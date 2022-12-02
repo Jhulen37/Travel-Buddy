@@ -4,29 +4,38 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RegisterPageComponent } from './register-page/register-page.component';
-import { ServicesComponent } from './services/services.component';
 import { DestinationComponent } from './destination/destination.component';
 import { HotelsComponent } from './hotels/hotels.component';
 import { FlightsComponent } from './flights/flights.component';
 import { HomeComponent } from './home/home.component';
+import { HttpClientModule } from '@angular/common/http';
+import { MaterialModule } from './shared/material.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
     RegisterPageComponent,
-    ServicesComponent,
     DestinationComponent,
     HotelsComponent,
     FlightsComponent,
-    HomeComponent
+    HomeComponent,
   ],
   imports: [
+    FormsModule,
+    ReactiveFormsModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    MaterialModule,
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
