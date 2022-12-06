@@ -15,8 +15,9 @@ export class DestinationComponent implements OnInit {
 
   onClick(){
     if(this.place.id == 0){
-        this.places.push({id: (new Date()).getTime(), name: this.place.name});
-    }
+        this.places.push();
+        //new Date()).getTime(), name: this.place.name
+      }
 
   }
 
@@ -25,13 +26,14 @@ export class DestinationComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onEdit(place){
-    this.place = place;
+  onEdit(place: any){
+    this.place = place
+
 }
 
-onDelete(place){
-  for(var i = 0;i < this.places.length; i++){
-      if(place.id == this.places[i].id){
+onDelete(place: any){
+  for(var i = 0; i < this.places.length; i++){
+      if(this.place.id ==this.places[i]){
           this.places.splice(i,1);
           break;
       }
