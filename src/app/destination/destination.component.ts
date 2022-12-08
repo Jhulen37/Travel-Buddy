@@ -6,9 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./destination.component.css']
 })
 export class DestinationComponent implements OnInit {
+
   place = {
     name: '',
-    id: 0
+    id: 0,
   };
 
   places = [];
@@ -16,12 +17,13 @@ export class DestinationComponent implements OnInit {
 
   onClick(){
     if(this.place.id == 0){
-      this.places.push();
-    }
+      this.places.push({id: (new Date()).getTime(),name: this.place.name});
+
     this.place = {
       name: '',
       id: 0
-    };
+    }
+    }
      }
 
      constructor() { }
@@ -46,5 +48,4 @@ unChecked(){
  if(this.check == !true)
  return
 }
-
-    }
+}
