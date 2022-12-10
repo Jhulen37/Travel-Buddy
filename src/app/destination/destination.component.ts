@@ -17,7 +17,8 @@ export class DestinationComponent implements OnInit {
 
   onClick(){
     if(this.place.id == 0){
-      this.places.push({id: (new Date()).getTime(),name: this.place.name});
+      this.places.push();
+      //{id: (new Date()).getTime(),name: this.place.name}
 
     this.place = {
       name: '',
