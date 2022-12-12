@@ -1,2 +1,10 @@
-@import "~bootstrap-icons/font/bootstrap-icons.css"
+@import "~bootstrap-icons/font/bootstrap-icons.css";
 
+.mainImage {
+    background-image: url(https://thehawaiivacationguide.com/wp-content/uploads/2022/01/Big-Island-Travel-Guide-Waipio-Valley-1.jpg);
+    height: auto;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}

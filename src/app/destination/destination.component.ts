@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DestinationService } from './destination.service';
 
 @Component({
   selector: 'app-destination',
@@ -9,27 +10,25 @@ export class DestinationComponent implements OnInit {
 
   place = {
     name: '',
-    id: 0,
-  };
+   };
 
   places = [];
   check = false;
 
   onClick(){
-    if(this.place.id == 0){
-      this.places.push();
+    if(this.place.name == ''){
+      this.places.push.name;
       //{id: (new Date()).getTime(),name: this.place.name}
 
     this.place = {
-      name: '',
-      id: 0
+      name: ''
     }
     }
      }
 
      constructor() { }
 
-     ngOnInit(): void {
+     ngOnInit() {
     }
 
   onEdit(item: any){
@@ -37,16 +36,11 @@ export class DestinationComponent implements OnInit {
 }
 
 onDelete( item: any){
-  for(var i = 0; i < this.places.length; i++){
-      if(this.place.id ==this.places[i]){
-          this.places.splice(i,1);
-          break;
+        if(this.place.name){
+          this.places.splice;
+
       }
   }
 }
 
-unChecked(){
- if(this.check == !true)
- return
-}
-}
+

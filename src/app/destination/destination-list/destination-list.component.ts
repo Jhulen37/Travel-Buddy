@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Destination } from '../destination.module';
+import { DestinationService } from '../destination.service';
 
 @Component({
   selector: 'app-destination-list',
@@ -6,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./destination-list.component.css']
 })
 export class DestinationListComponent implements OnInit {
+  destinations: Destination[] = [];
 
-  constructor() { }
+  constructor(private destinService: DestinationService) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+this.destinations = this.destinService.getDesinations();
   }
 
 }
