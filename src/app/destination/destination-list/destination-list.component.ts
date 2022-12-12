@@ -8,12 +8,14 @@ import { DestinationService } from '../destination.service';
   styleUrls: ['./destination-list.component.css']
 })
 export class DestinationListComponent implements OnInit {
-  destinations: Destination[] = [];
+  //destinations: Destination[] = [];
+  //newDestinations= "string";
 
   constructor(private destinService: DestinationService) { }
 
   ngOnInit() {
-this.destinations = this.destinService.getDesinations();
+//this.destinations = this.destinService.getDesinations();
   }
+
 
 }

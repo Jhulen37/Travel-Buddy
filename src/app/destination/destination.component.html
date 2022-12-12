@@ -1,30 +1,42 @@
-<div class="mainImage">
-<div class="container">
-    <h2>Destinations</h2>
-  <div class="row">
-      <div class="col-md-3">
+  <div class="card-img-overlay"></div>
+  <img class="card-img-fluid" src="https://thehawaiivacationguide.com/wp-content/uploads/2022/01/Big-Island-Travel-Guide-Waipio-Valley-1.jpg" alt=""
+  width="100%" height="auto">
+   <div class="card-img-overlay">
+     <div class="container mt-5 p-4">
+
+  <div class="text">
+    <h1 style="text-align: center"
+    >Destinations</h1>
+   <div class="row">
+      <div class="col-md-4">
           <div class="input-group">
-              <input type="text" class="form-control" placeholder="enter Destination" id="txtSearch" [(ngModel)]="place.name"/>
+              <input type="text" class="form-control" placeholder="enter Destination" id="txtSearch" [(ngModel)]="newDestination">
               <div class="input-group-btn">
-                  <button class="btn btn-primary" type="button" (click)="onClick()">
+                  <button class="btn btn-primary" type="button" (click)="saveDestin()">
                     <span class="bi bi-clipboard2-plus-fill"></span>
                    </button>
               </div>
           </div>
+
    <br>
   <ul class="list-group">
-    <li *ngFor="let place of places" class="list-group-item">
+    <li *ngFor="let saveDestin of destinations; let i = index;" class="list-group-item">
   <label>&nbsp;&nbsp;</label>
   <span>
-    {{ place }} &nbsp;&nbsp;
-</span>
-<span (click)="onEdit(place)" class="bi bi-pencil-fill" ></span>
-<span (click)="onDelete(place)" class="bi bi-clipboard2-x-fill"></span>
+  {{ saveDestin.name }}
+  </span>
+
 </ul>
 </div>
 </div>
 </div>
 </div>
+</div>
+
+
+
+
+
 
 
 
