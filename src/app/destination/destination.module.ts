@@ -1,8 +1,9 @@
 export class Destination {
-    public name: string
+    name: string;
+    isCompleted: boolean;
 
 
-    constructor(name: string) {
-        this.name = name;
-    }
+    //constructor(name: string) {
+      //  this.name = name;
+  //  }
 }

@@ -1,4 +1,5 @@
 @import "~bootstrap-icons/font/bootstrap-icons.css";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 .mainImage {
     background-image: url(https://thehawaiivacationguide.com/wp-content/uploads/2022/01/Big-Island-Travel-Guide-Waipio-Valley-1.jpg);
@@ -9,3 +10,34 @@
 
 }
 
+.headerOne {
+    margin-top: 200px;
+    margin-bottom: 50px;
+    color: white;
+    font-size: 400%;
+    text-shadow: black 2px 0 10px;
+    text-align: center;
+    font-family: Dancing Script, cursive;
+
+}
+
+.headerTwo {
+    margin-top: 200px;
+    margin-bottom: 50px;
+    color: white;
+    font-size: 400%;
+    text-shadow: black 2px 0 10px;
+    text-align: center;
+    font-family: Georgia, serif;
+
+}
+
+.tripFont {
+    margin-top: 200px;
+    margin-bottom: 50px;
+    color: black;
+    font-size: 100%;
+    text-align: center;
+    font-family: Georgia, serif;
+
+}

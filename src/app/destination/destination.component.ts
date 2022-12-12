@@ -1,22 +1,25 @@
 import { Component, OnInit } from '@angular/core';
-import { DestinationService } from './destination.service';
-import { Destination } from './destination.module';
+import { Destin } from './destin';
+//import { DestinationService } from './destination.service';
+//import { Destination } from './destination.module';
 
 @Component({
   selector: 'app-destination',
   templateUrl: './destination.component.html',
   styleUrls: ['./destination.component.css']
 })
+
 export class DestinationComponent implements OnInit {
-  destinations: Destination[] = [];
-  newDestinations= '';
+   destinations: Destin[] = [];
+  newDestination= '';
 
   saveDestin() {
-    if(this.newDestinations) {
-  let destinations = this.newDestinations;
-  //destinations.name = this.newDestinations;
-  this.destinations.push();
-  this.newDestinations = '';
+    if(this.newDestination) {
+  let destination = new Destin;
+  destination.name = this.newDestination;
+  destination.isCompleted = true
+  this.destinations.push(destination);
+  this.newDestination = '';
     }
     else(alert('Please enter Destinations'))
   }
@@ -45,16 +48,17 @@ export class DestinationComponent implements OnInit {
      ngOnInit() {
     }
 
- //onEdit(item: any){
- //   this.place = item;
-//}
+ onEdit(){
+   this.destinations = this.destinations;
+}
 
-//onDelete( item: any){
-   //     if(this.place.name){
-   //       this.places.splice;
+onDelete(){
+       if(this.saveDestin.name){
+        this.destinations.slice();
 
-   //   }
- // }
+
+    }
+ }
 }
 
 

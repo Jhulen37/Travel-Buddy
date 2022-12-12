@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Destination } from '../destination.module';
-import { DestinationService } from '../destination.service';
+//import { Destination } from '../destination.module';
+//import { DestinationService } from '../destination.service';
 
 @Component({
   selector: 'app-destination-list',
@@ -11,7 +11,7 @@ export class DestinationListComponent implements OnInit {
   //destinations: Destination[] = [];
   //newDestinations= "string";
 
-  constructor(private destinService: DestinationService) { }
+  //constructor(private destinService: DestinationService) { }
 
   ngOnInit() {
 //this.destinations = this.destinService.getDesinations();
