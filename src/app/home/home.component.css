@@ -1,0 +1,72 @@
+.landing {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: fill;
+  width: 100vw;
+  height: 40rem;
+  background-image: url("https://images.pexels.com/photos/1110670/pexels-photo-1110670.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+.mat-tab-group[mat-stretch-tabs] > .mat-tab-header .mat-tab-label {
+  flex: auto;
+}
+
+.custom_card {
+  height: 18rem;
+  width: 18rem;
+  border-radius: 1rem;
+  background-color: lightblue;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+/* .img {
+  position: absolute;
+  right: 0%;
+  display: block;
+  padding-right: 20%;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  display: block;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front,
+.flip-box-back {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: white;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* mat-grid-tile {
+  background: lightblue;
+} */

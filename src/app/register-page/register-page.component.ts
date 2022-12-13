@@ -2,6 +2,7 @@ import { AuthenticationService } from '../services/authentication.service';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-register-page',
@@ -15,7 +16,8 @@ export class RegisterPageComponent implements OnInit {
 
   constructor(
     private authenticationService: AuthenticationService,
-    private router: Router
+    private router: Router,
+    public dialog: MatDialog
   ) {}
 
   ngOnInit() {
@@ -31,7 +33,7 @@ export class RegisterPageComponent implements OnInit {
     console.log(email, password);
     if (this.isLoginMode) {
       this.authenticationService.login(email, password).subscribe((res) => {
-        this.router.navigate(['']);
+        this.dialog.closeAll();
         console.log(res);
       });
     } else {

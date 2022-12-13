@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -14,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MaterialModule } from './shared/material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DestinationListComponent } from './destination/destination-list/destination-list.component';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [
@@ -36,6 +38,8 @@ import { DestinationListComponent } from './destination/destination-list/destina
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MatGridListModule,
+    CommonModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

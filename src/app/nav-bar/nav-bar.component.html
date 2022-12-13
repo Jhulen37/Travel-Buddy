@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-dark">
+<!-- <nav class="navbar navbar-expand-lg bg-dark">
   <div class="container-fluid">
         <a class="navbar-brand">Travel Buddy</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,4 +29,22 @@
       </ul>
     </div>
   </div>
-</nav>
+</nav> -->
+<mat-toolbar>
+  <span
+    class="material-icons"
+    style="scale: calc(1.5); color: #f8f9fa; padding: 5px"
+  >
+    connecting_airports
+  </span>
+  <span style="color: #f8f9fa; cursor: pointer">Travel Buddy</span>
+  <span style="color: #f8f9fa; cursor: pointer" class="mx-5">Destination</span>
+  <span
+    style="color: #f8f9fa; border-bottom: 1px solid #f8f9fa; cursor: pointer"
+    >Flight</span
+  >
+  <span style="color: #f8f9fa; cursor: pointer" class="mx-5">Hotel</span>
+
+  <span class="example-spacer" style="flex: 1 1 auto"></span>
+  <button mat-raised-button (click)="login()">Login</button>
+</mat-toolbar>
