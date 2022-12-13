@@ -1,7 +1,34 @@
-<nav class="navbar navbar-expand-lg bg-dark">
+<mat-toolbar>
+  <span
+    class="material-icons"
+    style="scale: calc(1.5); color: #f8f9fa; padding: 5px"
+  >
+    connecting_airports
+  </span>
+  <span style="color: #f8f9fa; cursor: pointer">Travel Buddy</span>
+  <span style="color: #f8f9fa; cursor: pointer" class="mx-5">Destination</span>
+  <span
+    style="color: #f8f9fa; border-bottom: 1px solid #f8f9fa; cursor: pointer"
+    >Flight</span
+  >
+  <span style="color: #f8f9fa; cursor: pointer" class="mx-5">Hotel</span>
+
+  <span class="example-spacer" style="flex: 1 1 auto"></span>
+  <button mat-raised-button (click)="login()">Login</button>
+</mat-toolbar>
+
+<!-- <nav class="navbar navbar-expand-lg bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Travel Buddy</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -23,9 +50,14 @@
         </li>
       </ul>
       <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
     </div>
   </div>
-</nav>
+</nav> -->
