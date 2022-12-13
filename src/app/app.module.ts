@@ -14,6 +14,7 @@ import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MaterialModule } from './shared/material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DestinationListComponent } from './destination/destination-list/destination-list.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 
 @NgModule({
@@ -25,6 +26,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
     HotelsComponent,
     FlightsComponent,
     HomeComponent,
+    DestinationListComponent,
   ],
   imports: [
     FormsModule,
