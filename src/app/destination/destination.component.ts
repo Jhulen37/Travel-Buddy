@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Destin } from './destin';
-//import { DestinationService } from './destination.service';
-//import { Destination } from './destination.module';
+
 
 @Component({
   selector: 'app-destination',
@@ -24,24 +23,6 @@ export class DestinationComponent implements OnInit {
     else(alert('Please enter Destinations'))
   }
 
-
-  //place = {
- //   name: '',
- //  };
-
- // places = [];
- // check = false;
-
- // onClick(){
-  //  if(this.place.name == ''){
-   //   this.places.push.name;
-      //{id: (new Date()).getTime(),name: this.place.name}
-
-  //  this.place = {
-  //    name: ''
-   // }
-   // }
-   //  }
 
      constructor() { }
 
