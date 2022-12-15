@@ -7,6 +7,7 @@ import { HotelsComponent } from './hotels/hotels.component';
 import { RegisterPageComponent } from './register-page/register-page.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: '/home', pathMatch: 'full'},
   { path: 'home', component: HomeComponent},
   { path: 'register', component: RegisterPageComponent},
   { path: 'destination', component: DestinationComponent},
@@ -16,6 +17,8 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule],
+  exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule {
+
+}

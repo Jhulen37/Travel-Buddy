@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xl-6">
+            <h1>Available Flights</h1>
+<span *ngFor="let flight of flightOptions">
+<div>
+        <mat-icon style="scale: calc(1.2)">flight</mat-icon>
+        <span class="flightFont">{{ flight.location }}</span>
+        <span class="flightFont">{{ flight.airline }}</span>
+        <span class="flightFont">{{ flight.planeNumber}}</span>
+        <span class="flightFont">{{ flight.departureTime}}</span>
+        <span class="flightFont">{{ flight.arrivalTime }}</span>
+        <button class="btn btn-danger">Add</button>
+    </div>
+</span>
+        </div>
+    </div>
+</div>
