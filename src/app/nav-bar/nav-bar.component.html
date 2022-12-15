@@ -37,14 +37,14 @@
   >
     connecting_airports
   </span>
-  <span style="color: #f8f9fa; cursor: pointer">Travel Buddy</span>
-  <span style="color: #f8f9fa; cursor: pointer" class="mx-5">Destination</span>
-  <span
-    style="color: #f8f9fa; border-bottom: 1px solid #f8f9fa; cursor: pointer"
-    >Flight</span
-  >
-  <span style="color: #f8f9fa; cursor: pointer" class="mx-5">Hotel</span>
+
+  <span style="color: #f8f9fa; cursor: pointer" routerLink="/home">Travel Buddy</span>
+  <span style="color: #f8f9fa; cursor: pointer" class="mx-5" routerLink="/destination">Destination</span>
+  <span style="color: #f8f9fa; cursor: pointer" routerLink="/flight">Flight</span>
+  <span style="color: #f8f9fa; cursor: pointer" class="mx-5" routerLink="/hotel">Hotel</span>
 
   <span class="example-spacer" style="flex: 1 1 auto"></span>
   <button mat-raised-button (click)="login()">Login</button>
 </mat-toolbar>
+
+

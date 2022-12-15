@@ -29,17 +29,7 @@ export class DestinationComponent implements OnInit {
      ngOnInit() {
     }
 
- onEdit(){
-   this.destinations = this.destinations;
-}
-
-onDelete(){
-       if(this.saveDestin.name){
-        this.destinations.slice();
-
-
-    }
  }
-}
+
 
 

@@ -33,11 +33,17 @@
 }
 
 .tripFont {
-    margin-top: 200px;
+    color: black;
+    font-size: 150%;
+    text-align: center;
+
+}
+
+.headerThree {
+    margin-top: 30px;
     margin-bottom: 50px;
     color: black;
-    font-size: 100%;
+    font-size: 250%;
     text-align: center;
-    font-family: Georgia, serif;
-
+    font-family: Dancing Script, cursive;
 }

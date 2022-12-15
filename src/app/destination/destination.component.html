@@ -1,14 +1,16 @@
   <div class="card-img-overlay"></div>
-  <img class="card-img-fluid" src="https://thehawaiivacationguide.com/wp-content/uploads/2022/01/Big-Island-Travel-Guide-Waipio-Valley-1.jpg" alt=""
+  <img class="card-img-fluid" src="assets/img/destination.jpg"
+  alt=""
   width="100%" height="auto">
    <div class="card-img-overlay">
      <div class="container mt-5 p-4">
 
   <div>
     <h1 style="margin-top: 350px;"><span class="headerOne">Your</span><span class="headerTwo">DESTINATION</span><span class="headerOne">awaits...</span></h1>
-    <div style="justify-content: center" class="row">
+        <div style="justify-content: center" class="row">
+          <h5 class="headerThree">Lets start planning.</h5>
       <div class="col-md-4">
-          <div style="margin-top: 25px;" class="input-group">
+             <div style="margin-top: 25px;" class="input-group">
               <input type="text" class="form-control" placeholder="enter Destination" id="txtSearch" [(ngModel)]="newDestination">
               <div class="input-group-btn">
                   <button class="btn btn-primary" type="button" (click)="saveDestin()">
@@ -19,14 +21,14 @@
 
    <br>
   <ul class="list-group">
-    <li *ngFor="let saveDestin of destinations; let i = index;"
-    style="justify-content: center;" class="list-group-item">
+    <li *ngFor="let saveDestin of destinations; let i = index;" class="list-group-item">
   <label>&nbsp;&nbsp;</label>
   <span class="tripFont">
   {{ saveDestin.name }} &nbsp;&nbsp;
   </span>
-  <span (click)="onEdit()" class="bi bi-pencil-fill" ></span>
-  <span (click)="onDelete()" class="bi bi-bag-x-fill"></span>
+  <span class="material-icons mx-3" style="scale: calc(1.3); cursor: pointer" routerLink="/flight">flight</span>
+   <span class="material-icons mx-3" style="scale: calc(1.3); cursor: pointer" routerLink="/hotel">luggage</span>
+
   </li>
 </ul>
 </div>
@@ -34,6 +36,7 @@
 </div>
 </div>
 </div>
+
 
 
 
